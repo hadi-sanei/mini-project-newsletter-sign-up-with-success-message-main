@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('TrueType');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto-Regular';
+}
+
+body{
+    height: 100vh;
+    background-color: #232643;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.success{
+    max-width: 420px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.success > img{
+    width: 50px;
+}
+.success > h1{
+    font-size: 3.3rem;
+    color: #232643;
+
+}
+
+
+.success  > button{
+    position: relative;
+    padding: 1rem;
+    font-size: 1rem;
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+    background: linear-gradient(90deg, #232643 0%, #232643 79%);
+    color: white;
+    border: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.success  > button:hover{
+    background: linear-gradient(90deg, rgba(238,32,143,1) 0%, rgba(249,178,54,1) 79%);
+    box-shadow: 0 5px 15px rgba(238,32,143,1);
+}
+
+@media (max-width: 576px) {
+    .success {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .success  > p{
+        margin-bottom: 150px;
+    }
+}
